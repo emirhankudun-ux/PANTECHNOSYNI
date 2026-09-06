@@ -1,0 +1,19 @@
+{
+  "name": "pantechnosyni",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public interdisciplinary synthesis system connecting creative practice, technology, science, and human experience.",
+  "scripts": {
+    "test": "node --test",
+    "check:foundation": "node scripts/check-foundation.mjs",
+    "atlas": "node scripts/pantechnosyni-atlas.mjs summary",
+    "atlas:json": "node scripts/pantechnosyni-atlas.mjs json",
+    "atlas:disciplines": "node scripts/pantechnosyni-atlas.mjs disciplines",
+    "check": "npm test && npm run check:foundation"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "atlasId": "pantechnosyni-synthesis-atlas-v1",
+  "identity": {
+    "displayName": "PANTECHNOSYNI",
+    "greekName": "ΠΑΝΤΕΧΝΟΣΥΝΗ",
+    "tagline": "Unified Creative Intelligence Ecosystem",
+    "mode": "public-foundation"
+  },
+  "principles": [
+    "human-authored-direction",
+    "cross-domain-clarity",
+    "evidence-before-claims",
+    "public-safe-by-default",
+    "accessible-and-portable"
+  ],
+  "disciplines": [
+    {
+      "id": "visual-design",
+      "label": "Visual Design",
+      "domain": "creative",
+      "description": "Identity, typography, composition, color, and visual systems.",
+      "outputs": ["identity-system", "editorial-system", "visual-language"],
+      "connectsTo": ["motion-design", "product-strategy", "human-experience"]
+    },
+    {
+      "id": "motion-design",
+      "label": "Motion Design",
+      "domain": "creative",
+      "description": "Time, rhythm, transition, and expressive interface behavior.",
+      "outputs": ["motion-language", "interaction-sequence", "narrative-rhythm"],
+      "connectsTo": ["visual-design", "three-dimensional-design", "human-experience"]
+    },
+    {
+      "id": "three-dimensional-design",
+      "label": "3D Design",
+      "domain": "creative-technology",
+      "description": "Spatial form, materials, lighting, environments, and simulation-ready assets.",
+      "outputs": ["spatial-system", "material-study", "environment-concept"],
+      "connectsTo": ["motion-design", "software-engineering", "scientific-modeling"]
+    },
+    {
+      "id": "product-strategy",
+      "label": "Product Strategy",
+      "domain": "product",
+      "description": "Purpose, audience, prioritization, value, and delivery framing.",
+      "outputs": ["product-thesis", "decision-framework", "delivery-roadmap"],
+      "connectsTo": ["visual-design", "human-experience", "software-engineering", "knowledge-architecture"]
+    },
+    {
+      "id": "human-experience",
+      "label": "Human Experience",
+      "domain": "human",
+      "description": "Usability, accessibility, emotion, trust, and inclusive interaction.",
+      "outputs": ["experience-principles", "accessibility-contract", "research-question"],
+      "connectsTo": ["visual-design", "motion-design", "product-strategy", "cultural-research"]
+    },
+    {
+      "id": "software-engineering",
+      "label": "Software Engineering",
+      "domain": "technology",
+      "description": "Modular architecture, reliable implementation, testing, and delivery systems.",
+      "outputs": ["software-architecture", "interface-contract", "verification-plan"],
+      "connectsTo": ["product-strategy", "three-dimensional-design", "ai-systems", "knowledge-architecture"]
+    },
+    {
+      "id": "ai-systems",
+      "label": "AI Systems",
+      "domain": "technology",
+      "description": "Model orchestration, evaluation, tool boundaries, and human supervision.",
+      "outputs": ["ai-capability-map", "evaluation-plan", "human-approval-gate"],
+      "connectsTo": ["software-engineering", "mathematics", "knowledge-architecture", "human-experience"]
+    },
+    {
+      "id": "knowledge-architecture",
+      "label": "Knowledge Architecture",
+      "domain": "knowledge",
+      "description": "Taxonomy, provenance, retrieval, synthesis, and durable decision memory.",
+      "outputs": ["knowledge-map", "provenance-model", "decision-record"],
+      "connectsTo": ["product-strategy", "software-engineering", "ai-systems", "cultural-research"]
+    },
+    {
+      "id": "mathematics",
+      "label": "Mathematics",
+      "domain": "science",
+      "description": "Formal reasoning, structure, optimization, uncertainty, and measurement.",
+      "outputs": ["formal-model", "metric-system", "uncertainty-model"],
+      "connectsTo": ["ai-systems", "scientific-modeling", "software-engineering"]
+    },
+    {
+      "id": "scientific-modeling",
+      "label": "Scientific Modeling",
+      "domain": "science",
+      "description": "Hypotheses, observations, reproducible models, and evidence-aware explanation.",
+      "outputs": ["hypothesis-map", "experiment-design", "evidence-summary"],
+      "connectsTo": ["mathematics", "three-dimensional-design", "knowledge-architecture"]
+    },
+    {
+      "id": "cultural-research",
+      "label": "Cultural Research",
+      "domain": "humanities",
+      "description": "Context, symbolism, language, history, and responsible interpretation.",
+      "outputs": ["cultural-context", "symbol-system", "narrative-guardrail"],
+      "connectsTo": ["human-experience", "knowledge-architecture", "visual-design"]
+    },
+    {
+      "id": "systems-thinking",
+      "label": "Systems Thinking",
+      "domain": "knowledge",
+      "description": "Relationships, feedback loops, boundaries, risks, and long-horizon effects.",
+      "outputs": ["system-map", "risk-register", "feedback-model"],
+      "connectsTo": ["product-strategy", "knowledge-architecture", "scientific-modeling", "ai-systems"]
+    }
+  ],
+  "policy": {
+    "runtimeExecution": false,
+    "externalWrites": false,
+    "privateData": false,
+    "automaticClaims": false
+  }
+}

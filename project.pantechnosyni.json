@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "id": "pantechnosyni",
+    "displayName": "PANTECHNOSYNI",
+    "greekName": "ΠΑΝΤΕΧΝΟΣΥΝΗ",
+    "repository": "emirhankudun-ux/PANTECHNOSYNI",
+    "visibility": "public",
+    "productClass": "interdisciplinary-synthesis-system",
+    "status": "foundation"
+  },
+  "mission": "Connect creative practice, technology, science, and human experience through public, inspectable synthesis tools.",
+  "ownership": {
+    "owns": [
+      "interdisciplinary-synthesis-atlas",
+      "public-synthesis-workflows",
+      "cross-domain-design-language",
+      "open-learning-examples"
+    ],
+    "doesNotOwn": [
+      "external-project-runtime",
+      "private-creative-memory",
+      "external-research-programs",
+      "third-party-source-history"
+    ]
+  },
+  "interfaces": {
+    "atlasData": "content/atlas/disciplines.json",
+    "library": "src/synthesis-atlas.mjs",
+    "cli": "scripts/pantechnosyni-atlas.mjs",
+    "validation": "scripts/check-foundation.mjs"
+  },
+  "policy": {
+    "publicSafe": true,
+    "runtimeExecution": false,
+    "externalWrites": false,
+    "privateData": false,
+    "automaticClaims": false
+  }
+}
