@@ -15,9 +15,11 @@ PANTECHNOSYNI is an independent, public interdisciplinary synthesis system. It c
 
 PANTECHNOSYNI does not absorb external product runtimes, private creative memory, separate research programs, or another repository’s source history. Interoperability may be added later through explicit public contracts; ownership stays with each independent project.
 
-## Foundation feature: Synthesis Atlas
+## Synthesis Atlas
 
-The first working feature is a dependency-free graph of twelve disciplines across creative, product, human, technology, knowledge, science, and humanities domains.
+The foundation now includes both a dependency-free graph library and an accessible static web surface for twelve disciplines across creative, product, human, technology, knowledge, science, and humanities domains.
+
+### Command line
 
 ```bash
 npm run check
@@ -28,15 +30,22 @@ node scripts/pantechnosyni-atlas.mjs path visual-design ai-systems
 node scripts/pantechnosyni-atlas.mjs brief "Design a calm public learning environment" -- visual-design human-experience knowledge-architecture
 ```
 
-The atlas can search disciplines, find deterministic cross-domain paths, and create public-safe synthesis briefs. It does not execute models, call providers, mutate external systems, or publish claims automatically.
+### Web Atlas
+
+```bash
+python3 -m http.server 4173 --bind 127.0.0.1 --directory apps/web
+```
+
+Open `/index.html` to search and filter disciplines, inspect connections, trace paths, and create a session-only synthesis preview. The interface performs no network calls and stores nothing in the browser.
 
 ## Repository map
 
 ```text
 content/atlas/              Canonical public atlas data
 src/                        Dependency-free synthesis library
-scripts/                    Read-only CLI and foundation validator
-test/                       Node test suite
+apps/web/                   Accessible static Atlas product surface
+scripts/                    Build adapters, read-only CLIs, and validators
+test/                       Node behavior and static-surface tests
 docs/                       Architecture and roadmap
 .github/workflows/          Read-only CI
 ```
@@ -52,9 +61,9 @@ docs/                       Architecture and roadmap
 
 ## Status
 
-`v0.1.0 — public foundation`
+`v0.2.0 — interactive public foundation`
 
-The current repository contains a working local atlas, tests, validation, documentation, and CI. It is not a claim of live AI, autonomous execution, enterprise maturity, or production deployment.
+The repository contains a working local Atlas, interactive static web surface, tests, validation, documentation, and CI. It is not a claim of live AI, autonomous execution, enterprise maturity, production deployment, or accessibility certification.
 
 ## License
 

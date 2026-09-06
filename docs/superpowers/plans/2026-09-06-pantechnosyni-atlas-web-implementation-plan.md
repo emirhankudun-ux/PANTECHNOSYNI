@@ -21,15 +21,15 @@
 ### Task 1: Red tests and design contract
 
 - [x] Add tests for data parity, filtering, selection, paths, brief previews, semantics, responsive layout, and reduced motion.
-- [ ] Confirm hosted failure because the browser model, data, and page are absent.
+- [x] Confirm hosted failure because the browser data builder, model, and page were absent.
 
 ### Task 2: Browser data and model
 
-- [ ] Add deterministic browser-data generator and generated module.
-- [ ] Implement pure filtering, selection, path, brief-preview, and summary behavior.
+- [x] Add deterministic browser-data generator and generated module.
+- [x] Implement pure filtering, selection, path, brief-preview, and summary behavior.
 
 ### Task 3: Product interface and verification
 
-- [ ] Implement the Atlas HTML, CSS, and browser controller.
-- [ ] Add focused checker and architecture documentation.
-- [ ] Add read-only CI and verify hosted checks.
+- [x] Implement the Atlas HTML, CSS, and browser controller.
+- [x] Add focused checker and architecture documentation.
+- [ ] Confirm Atlas Web and foundation workflows on GitHub.
