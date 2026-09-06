@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the public PANTECHNOSYNI Synthesis Atlas across creative practice, technology, science, knowledge, and human experience.">
+    <title>PANTECHNOSYNI · Synthesis Atlas</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#mainContent">Skip to the Synthesis Atlas</a>
+
+    <header class="site-header">
+      <a class="identity" href="./index.html" aria-label="PANTECHNOSYNI Synthesis Atlas home">
+        <span class="identity-mark" aria-hidden="true">ΠΣ</span>
+        <span>
+          <strong>PANTECHNOSYNI</strong>
+          <small>ΠΑΝΤΕΧΝΟΣΥΝΗ</small>
+        </span>
+      </a>
+      <p>Interdisciplinary synthesis for human-directed work.</p>
+      <div class="header-status" aria-label="Atlas boundary">
+        <span>Public data</span>
+        <span>No execution</span>
+        <span>Human review</span>
+      </div>
+    </header>
+
+    <main id="mainContent" tabindex="-1">
+      <section class="intro" aria-labelledby="introTitle">
+        <div class="intro-copy">
+          <h1 id="introTitle">See where disciplines meet—and what they can make together.</h1>
+          <p>Search twelve connected practices, inspect their outputs, trace meaningful paths, and shape a synthesis brief without handing creative authority to an automated system.</p>
+        </div>
+        <dl class="atlas-metrics" aria-label="Atlas summary">
+          <div><dt>Disciplines</dt><dd id="disciplineMetric">12</dd></div>
+          <div><dt>Domains</dt><dd id="domainMetric">8</dd></div>
+          <div><dt>Connections</dt><dd id="connectionMetric">25</dd></div>
+        </dl>
+      </section>
+
+      <section class="atlas-shell" aria-label="Interactive Synthesis Atlas">
+        <aside class="domain-rail" aria-labelledby="domainTitle">
+          <div class="section-heading">
+            <span>01</span>
+            <h2 id="domainTitle">Domains</h2>
+          </div>
+          <label class="domain-select" for="domainFilter">
+            <span>Filter by domain</span>
+            <select id="domainFilter" aria-label="Filter by domain"></select>
+          </label>
+          <div id="domainList" class="domain-list" role="list" aria-label="Atlas domain counts"></div>
+          <div class="principle-note">
+            <strong>Evidence before claims.</strong>
+            <p>The atlas describes public relationships. It does not prove that every output has been built or validated.</p>
+          </div>
+        </aside>
+
+        <section class="atlas-workspace" aria-labelledby="workspaceTitle">
+          <div class="workspace-toolbar">
+            <div>
+              <span>02</span>
+              <h2 id="workspaceTitle">Discipline index</h2>
+            </div>
+            <label class="search-field" for="atlasSearch">
+              <span class="visually-hidden">Search disciplines and outputs</span>
+              <input id="atlasSearch" type="search" placeholder="Search typography, evidence, systems…" autocomplete="off">
+            </label>
+          </div>
+          <p id="atlasStatus" class="result-status" role="status" aria-live="polite"></p>
+          <div id="disciplineList" class="discipline-list" role="list" aria-label="Atlas disciplines"></div>
+        </section>
+
+        <aside id="disciplineInspector" class="discipline-inspector" aria-labelledby="inspectorTitle">
+          <div class="section-heading">
+            <span>03</span>
+            <h2 id="inspectorTitle">Selected discipline</h2>
+          </div>
+          <p id="inspectorDomain" class="inspector-domain"></p>
+          <h3 id="inspectorName"></h3>
+          <p id="inspectorDescription" class="inspector-description"></p>
+          <section aria-labelledby="outputTitle">
+            <h4 id="outputTitle">Possible outputs</h4>
+            <ul id="outputList"></ul>
+          </section>
+          <section aria-labelledby="connectionTitle">
+            <h4 id="connectionTitle">Connected practices</h4>
+            <div id="connectionList" class="connection-list"></div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="path-lab" aria-labelledby="pathTitle">
+        <div class="path-copy">
+          <span>04 · Relationship path</span>
+          <h2 id="pathTitle">Trace a route between two ways of thinking.</h2>
+          <p>The shortest path is calculated from the same public graph as the command-line Atlas.</p>
+        </div>
+        <form id="pathForm" class="path-controls">
+          <label for="pathFrom">From</label>
+          <select id="pathFrom"></select>
+          <label for="pathTo">To</label>
+          <select id="pathTo"></select>
+        </form>
+        <div id="pathResult" class="path-result" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="brief-lab" aria-labelledby="briefTitle">
+        <div class="brief-intro">
+          <span>05 · Human-directed synthesis</span>
+          <h2 id="briefTitle">Build a bounded synthesis brief.</h2>
+          <p>Select two to six disciplines, describe the challenge, then review the proposed outputs and questions. Nothing is saved or published.</p>
+        </div>
+        <div class="brief-builder">
+          <fieldset>
+            <legend>Choose disciplines</legend>
+            <div id="briefDisciplineList" class="brief-discipline-list"></div>
+          </fieldset>
+          <label class="challenge-field" for="briefChallenge">
+            <span>Challenge</span>
+            <textarea id="briefChallenge" rows="4" placeholder="Design a calm public learning environment"></textarea>
+          </label>
+          <button id="createBrief" type="button">Create preview</button>
+          <p id="briefStatus" class="brief-status" role="status" aria-live="polite">Select between two and six disciplines.</p>
+        </div>
+        <article id="briefPreview" class="brief-preview" aria-labelledby="previewTitle">
+          <span>Preview</span>
+          <h3 id="previewTitle">Waiting for human direction</h3>
+          <p id="previewChallenge">Your synthesis preview will appear here.</p>
+          <div id="previewDomains" class="preview-domains"></div>
+          <section aria-labelledby="previewOutputsTitle">
+            <h4 id="previewOutputsTitle">Recommended outputs</h4>
+            <ul id="previewOutputs"></ul>
+          </section>
+          <section aria-labelledby="previewQuestionsTitle">
+            <h4 id="previewQuestionsTitle">Review questions</h4>
+            <ol id="previewQuestions"></ol>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="sourceDigest"></span>
+      <span>Public-safe · Read-only · No provider calls · No external writes</span>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
