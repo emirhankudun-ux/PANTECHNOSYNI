@@ -32,4 +32,4 @@
 
 - [x] Implement the Atlas HTML, CSS, and browser controller.
 - [x] Add focused checker and architecture documentation.
-- [ ] Confirm Atlas Web and foundation workflows on GitHub.
+- [x] Confirm the Atlas Web and full Foundation workflows on GitHub.
